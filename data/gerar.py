@@ -12,9 +12,9 @@ data = {
     'exibirHome':[True, False]
   }
 
-data_frame = pd.DataFrame(data)
+df = pd.DataFrame(data)
 
 caminho_atual = os.getcwd()
 caminho_final = caminho_atual.replace('\\', '/')
 
-data_frame.to_csv(caminho_final+'/data/ferramentas.csv', index=False)
+df.to_csv(caminho_final+'/data/ferramentas.csv', index=False)
